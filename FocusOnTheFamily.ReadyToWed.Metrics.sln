@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FocusOnTheFamily.ReadyToWed.Metrics.WebSite", "FocusOnTheFamily.ReadyToWed.Metrics.WebSite\FocusOnTheFamily.ReadyToWed.Metrics.WebSite.csproj", "{301F47DE-AC34-48E2-8BA9-449EFC527720}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FocusOnTheFamily.ReadyToWed.Metrics.DataModel", "FocusOnTheFamily.ReadyToWed.Metrics.DataModel\FocusOnTheFamily.ReadyToWed.Metrics.DataModel.csproj", "{0447A62B-12DD-4108-99E9-90D26B90B19C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61BF332B-5E82-4FE8-9187-F9F88ED7D124}"
+	ProjectSection(SolutionItems) = preProject
+		DailyNumbers.csv = DailyNumbers.csv
+		README.md = README.md
+		TimeLog.txt = TimeLog.txt
+		Users.csv = Users.csv
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusOnTheFamily.ReadyToWed.Metrics.BusinessModel", "FocusOnTheFamily.ReadyToWed.Metrics.BusinessModel\FocusOnTheFamily.ReadyToWed.Metrics.BusinessModel.csproj", "{57B123B6-8BAB-4B2B-B352-BA791B164972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FocusOnTheFamily.ReadyToWed.Metrics.Test", "FocusOnTheFamily.ReadyToWed.Metrics.Test\FocusOnTheFamily.ReadyToWed.Metrics.Test.csproj", "{4565289C-540F-4104-A149-56D8AF6249EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{301F47DE-AC34-48E2-8BA9-449EFC527720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301F47DE-AC34-48E2-8BA9-449EFC527720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301F47DE-AC34-48E2-8BA9-449EFC527720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301F47DE-AC34-48E2-8BA9-449EFC527720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0447A62B-12DD-4108-99E9-90D26B90B19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0447A62B-12DD-4108-99E9-90D26B90B19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0447A62B-12DD-4108-99E9-90D26B90B19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0447A62B-12DD-4108-99E9-90D26B90B19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B123B6-8BAB-4B2B-B352-BA791B164972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B123B6-8BAB-4B2B-B352-BA791B164972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B123B6-8BAB-4B2B-B352-BA791B164972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B123B6-8BAB-4B2B-B352-BA791B164972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4565289C-540F-4104-A149-56D8AF6249EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4565289C-540F-4104-A149-56D8AF6249EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4565289C-540F-4104-A149-56D8AF6249EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4565289C-540F-4104-A149-56D8AF6249EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
