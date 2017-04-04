@@ -15,7 +15,6 @@ using Microsoft.EntityFrameworkCore;
 using AspNet.Security.OAuth.GitHub;
 
 using FocusOnTheFamily.ReadyToWed.Metrics.DataModel;
-using FocusOnTheFamily.ReadyToWed.Metrics.WebSite.Services;
 
 namespace FocusOnTheFamily.ReadyToWed.Metrics.WebSite {
   public class Startup {
@@ -105,14 +104,13 @@ namespace FocusOnTheFamily.ReadyToWed.Metrics.WebSite {
       );
 
       //Load the metrics database
-      //TODO: This should be moved elsewhere...
-      var readyToWedMetricsContext = app.ApplicationServices.GetService<ReadyToWedMetricsContext>();
-
-      var dailyNumbersFile = Path.Combine(env.WebRootPath, Configuration["ReadyToWedMetrics:DailyNumbersFile"]);
-      readyToWedMetricsContext.LoadDailyNumbersMetrics(dailyNumbersFile);
-
-      var usersFile = Path.Combine(env.WebRootPath, Configuration["ReadyToWedMetrics:UsersFile"]);
-      readyToWedMetricsContext.LoadUserMetrics(usersFile);
+      app.LoadData(
+        new DataLoaderOptions {
+          UsersFile = Path.Combine(env.WebRootPath, Configuration["ReadyToWedMetrics:UsersFile"]),
+          DailyNumbersFile =
+              Path.Combine(env.WebRootPath, Configuration["ReadyToWedMetrics:DailyNumbersFile"])
+        }
+      );
     }
   }
 }

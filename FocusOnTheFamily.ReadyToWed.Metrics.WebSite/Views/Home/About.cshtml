@@ -1,7 +1,83 @@
 ﻿@{
-    ViewData["Title"] = "About";
+  ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<h2>About This Development Exercise</h2>
+<h3>By Ben Stichter</h3>
+
+<p>
+  I know that a large amount of latitude was given in how to approach this assignment, but I wanted
+  to take a minute to outline what technology I used for this assignment and why I made the choices I made.
+</p>
+<p>
+  I wanted to show two things as a part of this development exercise. The most obvious is that I wanted to
+  show my coding style. To be honest, I didn't focus on this to much. I'm pretty sure I have enough code here
+  to make my style clear. Beyond that, however, I wanted to show a little a little more than that.
+</p>
+<p>
+  Throughout my career, I have been very good at catching on quickly, learning new technologies and software,
+  and being effective in a short amount of time. I wanted to try to demonstrate this as part of this project.
+  With this in mind, I have coded in technologies and platforms that I have basically no experience with and
+  tried to expand the scope a little bit to include some extra new technologies beyond what was strictly needed.
+</p>
+<p>
+  <ul>
+    <li>
+      Since this position is a web development position, I stuck with building a web site, but opted for ASP.NET Core
+      which is a whole different world from the ASP.NET I work with regularly. Everything is a little different 
+      and some things are significantly different.  Everything from getting your settings from the configuration
+      files to creating an database context for EF.
+    </li>
+    <li>
+      Since this position is for an organization that uses C#, I choose to stick with C#. I do have some
+      experience with it, but I have never developed a C# application from scratch or used it in a web
+      application.
+    </li>
+    <li>
+      I did not feel comfortable using my current work system for this project, so I used Visual Studio 2017
+      Community Edition. I have not even looked into VS017 yet (it is fabulous by the way) and have never
+      had a need for the Community Edition since I normally code in the Enterprise Edition.
+    </li>
+    <li>
+      ASP.NET Core is <i>heavily</i> dependent on dependency injection. I have used dependency injection
+      some in my own apps, but I have never worked on an application that uses it so much. Everything
+      is handled with dependency injection so I really had to brush up on it.
+    </li>
+    <li>
+      I have used GitHub before, but I have never done more than a file or two and never needed to get Git
+      configured correctly (like setting up the .gitignore file).
+    </li>
+    <li>
+      I have coded in MVC regularly, but have never used MVC6 which includes some new ways of doing things 
+      like TagHelpers. I even made it a point to create a custom TagHelper. I did find most of the code
+      on StackOverflow, but I understand how it is working so I could have (and considered), building another
+      from scratch.
+    </li>
+    <li>
+      I had to use EF Core as part of ASP.NET Core, which was new, but I saw little difference from what I'm used to. I 
+      did have issues getting the migrations to work but opted for an In-Memory database in the end anyway
+      to keep it lighter weight since it is an exercise.
+    </li>
+    <li>
+      I've never worked with Bootstrap, though it is on my radar for my own company. (We opted to invest in
+      vendor controls before Bootstrap came out and are now tied to it enough that switching will come 
+      slowly.)
+    </li>
+    <li>
+      I've never worked with OAuth2 or authenticating through an external security provider. Since this
+      was a website I felt I should include some security, but wanted to push the limits a little. I selected
+      GitHub since I knew you would need a login to retrieve my submission.
+    </li>
+    <li>
+      I've used MSUnit some in my current position, but I saw that xUnit was the preferred unit testing 
+      framework on the job description. I've not used xUnit so I did my unit tests in it. To be honest, 
+      I got off lucky there because VS2017 now has build in support for xUnit so I didn't have to mess
+      with any of the plumbing to get it working in Visual Studio.
+    </li>
+    <li>
+      I've never worked with bower which is now built into VS2017. I didn't have to do much with it,
+      but did research it to be sure I know what it was doing in the code Microsoft generated when
+      I created my website project.
+    </li>
+  </ul>
+</p>

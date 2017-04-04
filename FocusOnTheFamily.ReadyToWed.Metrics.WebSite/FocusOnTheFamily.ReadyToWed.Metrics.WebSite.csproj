@@ -30,6 +30,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FocusOnTheFamily.ReadyToWed.Metrics.BusinessModel\FocusOnTheFamily.ReadyToWed.Metrics.BusinessModel.csproj" />
     <ProjectReference Include="..\FocusOnTheFamily.ReadyToWed.Metrics.DataModel\FocusOnTheFamily.ReadyToWed.Metrics.DataModel.csproj" />
   </ItemGroup>
 

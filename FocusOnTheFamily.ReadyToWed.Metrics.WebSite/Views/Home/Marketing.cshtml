@@ -1,0 +1,43 @@
+﻿@using FocusOnTheFamily.ReadyToWed.Metrics.WebSite.MarketingViewModels
+
+@model MetricsViewModel
+
+@{
+  ViewData["Title"] = "Marketing";
+}
+
+<h2>@ViewData["Title"].</h2>
+
+<form class="form-horizontal">
+  <h4>View metrics.</h4>
+  <hr />
+  <div class="form-group">
+    <label asp-for="AverageInstallsPerDay" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+      <p asp-for="AverageInstallsPerDay" class="form-control-static"></p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label asp-for="AverageLoginsPerDay" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+      <p asp-for="AverageLoginsPerDay" class="form-control-static"></p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label asp-for="AverageAgeOfUsers" class="col-md-2 control-label"></label>
+    <div class="col-md-10">
+      <p asp-for="AverageAgeOfUsers" class="form-control-static"></p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-2 control-label">Users by Gender</label>
+    <div class="col-md-10">
+      <span>@Model.PercentOfUsersMale% Male</span>
+      <span class="pull-right">@Model.PercentOfUsersFemale% Female</span>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: @Model.PercentOfUsersMale%;"></div>
+        <div class="progress-bar progress-bar-success" style="width: @Model.PercentOfUsersFemale%;"></div>
+      </div>
+    </div>
+  </div>
+</form>
